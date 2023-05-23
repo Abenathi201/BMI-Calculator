@@ -2,104 +2,114 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
 body {
     /* background-color: #2d3436; */
+    font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
-    min-height: 100vh;
+    min-height: 100rem;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 12.5rem;
+    overflow-y: hidden;
 }
 
 .calculator {
-    width: 500px;
-    position: absolute;
+    text-align: center;
+    width: 31.25rem;
+    height: 70%;
+    /* position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50%; */
     background-color: rgb(69, 68, 68);
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 1px 1px 20px #2d3436;
+    /* transform: translate(-50%, -50%); */
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    box-shadow: 0.063rem 0.063rem 1.25rem #2d3436;
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 600;
     color: #000000;
 }
 
 div .text {
     text-align: left;
-    margin-left: 130px;
+    margin-left: 8.125rem;
     color: #000000;
-    margin-top: 25px;
+    margin-top: 1.563rem;
 }
 
 #weight, #height{
+    font-family: inherit;
     color: black;
     text-align: left;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 200;
     outline: none;
     border: none;
     background: none;
-    border-bottom: 1px solid #000000;
-    width: 200px;
+    border-bottom: 0.063rem solid #000000;
+    width: 12.5rem;
 }
 
 #weight:focus, #height:focus{
-    border-bottom: 2px solid #000000;
-    width: 300px;
+    border-bottom: 0.125rem solid #000000;
+    width: 18.75rem;
     transition: 0.4s;
     text-align: center;
 }
 
 #btn {
-    margin-top: 20px;
+    font-family: inherit;
+    margin-top: 1.25rem;
     border: none;
     color: rgb(207, 205, 205);
     background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
-    width: 150px;
-    padding: 10px;
-    border-radius: 30px;
+    width: 9.375rem;
+    padding: 0.625rem;
+    border-radius: 1.875rem;
     outline: none;
     cursor: pointer;
     
 }
 
 .info{
-    margin-top: 20px;
-    font-size: 15px;
+    font-family: inherit;
+    margin-top: 1.25rem;
+    font-size: 0.938rem;
     color: #000000;
 }
 
 #heading, #output, #message{
-    font-size: 15px;
+    font-family: inherit;
+    font-size: 0.938rem;
     color: #000000;
 }
 
 #heading{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 
 @media only screen and (max-width: 300px) {
     body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: #2d3436;
-        min-height: 0vh;
+        margin-top: 8.9rem;
+    }
+    
+    div .text {
+        text-align: left;
+        margin-left: 1.125rem;
+    }
+    
+    #weight:focus, #height:focus{
+        border-bottom: 0.125rem solid #000000;
+        width: 15.75rem;
+        transition: 0.4s;
         text-align: center;
-        overflow-x: hidden;
-        overflow-y: hidden;
     }
-    .calculator {
-        top: 50%;
-        left: 50%;
-        background-color: rgb(69, 68, 68);
-        transform: translate(-50%, -50%);
-        padding: 100px;
-    }
-}
+} 
